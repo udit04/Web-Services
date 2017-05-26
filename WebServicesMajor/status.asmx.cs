@@ -94,7 +94,7 @@ namespace WebServicesMajor
             RechargePlans[] rechargePlans;
             try
             {
-                string url = "https://joloapi.com/api/findplan.php?userid=dummy&key=101059574097915&opt=" + Opt + "&cir=" + Cir + "&typ=" + Category + "&amt=&max=&type=json";
+                string url = "https://joloapi.com/api/findplan.php?userid=@yourUserId&key=@yourUserKey&opt=" + Opt + "&cir=" + Cir + "&typ=" + Category + "&amt=&max=&type=json";
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
                 request.Method = "GET";
                 using (WebResponse response = request.GetResponse())
